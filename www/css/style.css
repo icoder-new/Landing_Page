@@ -1,0 +1,538 @@
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.info {
+	background: url(../img/LP_img/backgrounds/2.jpg);							/*HEADER background image*/
+}
+
+.container{
+	max-width: 1180px;																	/*This container fixes page's width to 1180px*/
+	margin: 0px auto;
+
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.logo__img {
+	display: flex;
+	justify-content: space-between;															/*Header logo styles*/
+	position: relative;
+	left: 3%;
+}
+
+img.logo__img {
+	display: flex;
+	align-self: flex-end;															/*Header logo styles*/
+	width: 31px;
+	height: 25px;
+}
+
+.nav__block {
+	display: flex;
+	justify-content: space-between;										/*making navigation row flex element*/
+	min-width: 770px;
+}
+
+nav > ul li {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;														/*navigation styles*/
+	margin-right: 32px;
+	margin-top: 45px;
+	font-weight: 700;
+}
+
+nav > ul li a {
+	color: #585858;														/*navigation links styles*/
+}
+
+nav > ul li a:hover {
+	color: #10c9c3;
+	transition: 300ms;														/*navigation links hover styles*/
+}
+
+nav > ul li:last-child {
+	right: 2%;																/*adding margin for the last element in order to separate it from the edge of the page*/
+}
+
+.info__about {
+	padding: 180px 45px 0 0;														/*some paddings for the title and the text*/
+}
+
+.info__about__row {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.info__about__body {
+	min-width: 300px;
+	max-width: 41%;
+	display: flex;
+	flex-direction: column;														/*making flex box with 2 dkex elements*/
+	justify-content: flex-end;
+}
+
+.main__title{
+	font-size: 38px;
+	line-height: 45px;
+	letter-spacing: 0.01em;														/*main title styles*/
+	color: #1d1d1d;
+	margin-bottom: 30px;
+}
+.main__text {
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0.005em;
+	color: #aaaaaa;
+	margin-bottom: 42px;
+	font-family: 'Nunito Sans', sans-serif;														/*under the title text's styles*/
+	font-weight: 400;
+}
+
+.contact__btn a {
+	color: #fff;
+	line-height: 20px;
+	padding: 20px 45px;
+	min-width: 160px;
+	background: #10c9c3;
+	text-align: center;
+	font-size: 12px;														/*under the text button's styles*/
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin-bottom: 200px;
+	display: inline-block;
+}
+
+.contact__btn a:hover {
+	transition: 300ms;														/*button hover styles*/
+	background: #3440b9;
+}
+
+.about {
+	margin: 100px 0px;														/*giving margins for the content in the block*/
+}
+
+.about__body {
+	margin: 0 auto;
+	max-width: 51%;																/* centralising text in the block*/
+	text-align: center;
+}
+.def__title {
+	font-size: 30px;
+	line-height: normal;
+	letter-spacing: 0.01em;														/* this style will be used many times then*/
+	margin-bottom: 30px;
+
+}
+.def__text {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.005em;
+	color: #aaaaaa;														/*this style will be used many times then*/
+	margin-bottom: 35px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+}
+
+.skills {
+	background: #f8f9f9;														/* making new block styles*/
+	max-height: 570px;
+
+}
+
+.skills__body {
+	display: flex;														/*making flex box*/
+	justify-content: space-between;
+	margin-bottom: -90px;
+}
+
+.skills__body__item1 {
+	padding: 165px 85px 165px 100px;														/*paddings for the developer scale*/
+}
+
+
+.skills__parrent {
+	min-width: 500px;
+	width: 43%;
+	height: 3px;
+	background: #d8d8d8;														/*it is the backstage of the scale elements*/
+	margin: 5px;
+	margin-top: 20px;
+	margin-left: -1px;
+
+}
+.child {
+	height: 100%;
+	background: #10c9c3;
+	border-bottom-right-radius: 10px;														/*it is the openstage of the scale elements*/
+}
+
+.skills__title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px
+	line-height: 30px;
+	letter-spacing: 0.1em;														/*skills title style*/
+	font-weight: 500;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+} 
+
+.skill__1 {
+	width: 75%;														/*percentage of fullness*/
+}
+.skill__2 {
+	width: 90%;
+}
+
+.skill__3 {
+	width: 65%;
+}
+
+.skills__body__img {
+	min-width: 590px;
+	min-height: 570px;														/*it is the image on the right of the scale*/
+}
+
+.result {
+	background: #10c9c3;														/*paddings for a new block*/
+	padding: 100px 0px;
+}
+.result__body {
+	display: flex;
+	justify-content: space-between;														/*making dlex box*/
+}
+.result__body__item {
+	margin-left: 3%;
+	display: flex;														/*item contains title, text and an image*/
+	min-width: 250px;
+}
+
+.result__img {
+	display flex;
+	align-self: center;
+}
+
+.result__descr {
+	margin-left: 20px;
+}
+
+.result__num {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.03em;
+	color: #fff;
+	font-weight: 500;
+}
+.result__text {
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.image__parent {
+	background: #000;														/*background for the image in order to do the black scale*/
+	overflow: hidden;
+}
+
+.grid__body {
+	min-width: 720px;
+	display: flex;														/*grid styles*/
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grid__body__img {
+	min-height: 300px;
+	min-width: 340px;
+	max-height: 300px;
+	max-width: 340px;
+	opacity: 1;
+	transition: opacity 124ms linear, transform 124ms linear;  /* Плавное изменение прозрачности и увеличения */
+	width: 100%;
+	height: auto;
+	display: block; /* Убираем полосу под картинкий */
+}
+
+.grid__body__img:hover {
+	opacity: 0.3; /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
+	transform: scale(1.05); /* Увеличение картинки */
+}
+
+.look__eye {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    left: 0;
+    top: 0;
+	background: url(../img/LP_img/main_icons/pe-7s-look.png);
+	background-repeat: no-repeat;
+	background-position: center center;										/*С эффектом глаза при наведении на картинку ничего дельного не вышло*/
+}
+
+.load__more {
+	min-width: 720px;
+	width: 100%;
+	background: #f5f5f5;														/*load more btn styles*/
+	top: 25%;
+	text-align: center;
+
+}
+
+.load__more a {
+	height: 100px;
+	display: block;
+	color: #8e8e8e;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+}
+
+.work {
+	margin: 100px 0px;														/*new block*/
+}
+
+.work__about {
+	margin: 0 auto;
+	max-width: 51%;														/*centalising the title with the descr*/
+	text-align: center;
+}
+.work__descr {
+	margin-bottom: 50px;
+}
+
+.work__video iframe {
+	margin-left: 3%;
+	min-width: 1180px;														/*video style*/
+	min-height: 570px;
+	max-width: 1180px;
+	max-height: 570px;
+}
+
+.show {
+	padding: 100px 0px 40px 0px;
+	background: #f5f5f5;														/*new block*/
+}
+
+.show__body {
+	max-width: 1180px;
+	min-width: 570px;														/*new block styles*/
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.show__item {
+	margin-left: 3%;
+	margin-bottom: 50px;
+	max-height: 160px;														/*item contains title, descr and image*/
+	max-width: 230px;
+	flex: 0 1 25%;
+}
+.show__img {
+	display: block;
+	margin: auto;
+	min-height: 40px;														/*image styles*/
+	min-width: 40px;
+	max-width: 40px;
+	max-height: 40px;
+}
+
+.show__title {
+	margin-top: 18px;
+	margin-bottom: 15px;														/*title styles... BUT descriotion is the same as "def__text" so i used that style for text*/
+	font-size: 12px;
+	line-height: 25px;
+	letter-spacing: 0.1em;
+	color: #191919;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.slider {
+	padding: 180px 0px;														/*slider*/
+	background: #10c9c3;
+}
+.slider__body {
+	margin: 0px 165px;
+	max-width: 850px;
+}
+
+.slider__item {
+	min-width: 480px;
+	text-align: center;														/*centralising the cite*/
+}
+
+.slider__cite {
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0.01em;
+	font-weight: 500;														/*cite styles*/
+	color: #fff;
+	margin-bottom: 35px;
+}
+.cite__author {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 12px
+	line-height: 36px;
+	letter-spacing: 0.1em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.partners {
+	background: #fff;														/*new block with the partners logos*/
+	padding: 60px 0px;
+}
+
+.partners__body {
+	display: flex;
+	justify-content: space-between;														/*making flex box*/
+}
+.partners__item > img {
+	min-width: 130px;
+	min-height: 70px;
+	max-width: 130px;														/*styles for the logos*/
+	max-height: 70px;
+}
+
+.partners__item {
+	margin-left: 5%;
+}
+
+.partners__item:last-child {
+	margin-right: 3%;
+}
+
+.contact {
+	padding: 100px 0px;														/*new block*/
+	background: #f5f5f5;
+}
+.contact__cnt {
+	width: 700px;
+	margin: 0 auto;														/*centralising content*/
+}
+.contact__body {
+	text-align: center;
+	margin-left: 3%;
+}
+.contact__descr {
+	padding: 0px 60px;
+}
+
+input[type="text"] {
+	margin-right: 30px;
+}
+
+input[type="text"], input[type="email"] {
+	font-family: 'Montserrat', sans-serif;
+	width: 322px;
+	height: 50px;
+	padding-left: 20px;
+	margin-bottom:30px;
+	font-weight: 500;
+}
+
+input.user__title {
+	width: 680px;
+	margin-bottom: 30px;
+}
+
+textarea#contact__com {
+	padding: 20px 0px 0px 20px;
+	margin-bottom:30px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	width: 680px;
+	min-height: 170px;
+	max-height: 300px;
+	resize: vertical;
+}
+
+.send__msg__btn a{
+	color: #fff;
+	line-height: 20px;
+	padding: 20px 45px;
+	min-width: 160px;
+	background: #10c9c3;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.send__msg__btn a:hover {
+	transition: 300ms;
+	background: #3440b9;
+}
+
+.footer {
+	padding: 50px;
+	background: #141414;
+	max-height: 280px;
+}
+
+.footer__row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;														/*making flex elements*/
+}
+.corp__info {
+	margin-right: 80px;																/*left block styles*/
+	min-width: 240px;
+}
+.corp__info__title {
+	color: #f4f4f4;
+	font-size: 18px;
+	line-height: 72px;
+	letter-spacing: 0.01em;														/*left block title styles*/
+	font-weight: 500;
+}
+.corp__info__text {
+	color: #757575;
+	font-size: 15px;
+	line-height: 24px;														/*left block text styles*/
+	letter-spacing: 0.005em;
+	font-weight: 400;
+}
+
+.corp__info__text a {
+	display: flex;
+	flex-direction: column;														/*links styles*/
+	color: #757575;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0.005em;
+	font-weight: 400;
+}
+
+.corp__links__cnt {
+	min-width: 150px;
+	justify-content: space-between;														/*the BIG container for links styles*/
+	display: flex;
+	max-height: 100px;
+}
+
+
+.social {
+	margin-left: 80px;
+}
